@@ -10,7 +10,6 @@ coins = {}
 while machine_on:
     flavour = input("What would you like? (espresso/latte/cappuccino): ")
     if flavour in flavours:
-        # TODO 1: Make coffee
         enough_resources = check_resources(menu[flavour]["ingredients"], resources)
         if enough_resources == "ok":
             print("Please insert coins:")

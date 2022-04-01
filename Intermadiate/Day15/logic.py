@@ -37,6 +37,12 @@ def sum_coins(coins, coins_value):
 
 
 def check_resources(ingredients, resources):
+    """
+    Check if the resources are enough to make the coffee
+    :param ingredients: Ingredients needed to make the coffee
+    :param resources: Resources available in the coffee machine
+    :return: Returns ok if the resources are enough, otherwise returns the resource that isn't enough
+    """
     water_remain = resources["water"] - ingredients["water"]
     milk_remain = resources["milk"] - ingredients["milk"]
     coffee_remain = resources["coffee"] - ingredients["coffee"]
@@ -55,7 +61,7 @@ def make_coffee(flavour, resources):
     Makes the coffee
     :param flavour: The flavour chosen by the user
     :param resources: Resources available in the machine
-    :return:
+    :return: Null
     """
     resources["water"] -= flavour["ingredients"]["water"]
     resources["milk"] -= flavour["ingredients"]["milk"]
