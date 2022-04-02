@@ -57,12 +57,19 @@ def check_resources(ingredients, resources):
 
 
 def process_coins(coins_value, flavour_cost):
+    """
+    Calculate the coins inserted by the user
+    :param coins_value: Value of each type of coin
+    :param flavour_cost: Cost of the coffee's flavour
+    :return: The change of the transaction, subtraction of the coins inserted and the coffee flavour's cost
+    """
     coins = {}
     print("Please insert coins:")
     for _ in coins_value:
         coins[_] = int(input(f"How many {_}? "))
     coins_inserted = sum_coins(coins, coins_value)
     return coins_inserted - flavour_cost
+
 
 def make_coffee(flavour, resources):
     """
