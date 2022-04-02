@@ -56,6 +56,14 @@ def check_resources(ingredients, resources):
         return "ok"
 
 
+def process_coins(coins_value, flavour_cost):
+    coins = {}
+    print("Please insert coins:")
+    for _ in coins_value:
+        coins[_] = int(input(f"How many {_}? "))
+    coins_inserted = sum_coins(coins, coins_value)
+    return coins_inserted - flavour_cost
+
 def make_coffee(flavour, resources):
     """
     Makes the coffee
