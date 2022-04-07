@@ -3,7 +3,7 @@
 # Replace the [name] placeholder with the actual name.
 # Save the letters in the folder "ReadyToSend".
 
-project_path = "C:/Dev/Udemy/PythonAngelaYu/python_udemy/Intermadiate/Day24"
+project_path = "/Intermediate/Day24"
 
 with open(f"{project_path}/Input/Names/invited_names.txt") as invited_names:
     names = invited_names.readlines()

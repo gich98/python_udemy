@@ -1,6 +1,6 @@
-from Intermadiate.Day17 import data
-from Intermadiate.Day17.question_model import Question
-from Intermadiate.Day17.quiz_brain import QuizBrain
+from Intermediate.Day17 import data
+from Intermediate.Day17.question_model import Question
+from Intermediate.Day17.quiz_brain import QuizBrain
 
 question_bank = []
 is_correct = True
