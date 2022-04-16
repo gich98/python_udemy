@@ -8,11 +8,11 @@ COMPANY_NAME = "Tesla Inc"
 AV_STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 AV_STOCK_TIME_SERIES = "TIME_SERIES_DAILY"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-AV_API_KEY = "TZ1RI4NSKZQNMW5G"
-NEWS_API_KEY = "bee209d9fd0a4e21a92decb585b99860"
+AV_API_KEY = "Stock API Key"
+NEWS_API_KEY = "News API Key"
 current_date = dt.datetime.now().strftime("%Y-%m-%d-1")
-MY_EMAIL = "vg.checkrain@gmail.com"
-MY_PASSWORD = "1234567890asD."
+MY_EMAIL = "from@email.com"
+MY_PASSWORD = "Password"
 # STEP 1: Use https://www.alphavantage.co
 # When CLOSE STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
 # https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=demo
@@ -69,7 +69,7 @@ def send_email(delta, top_3_news):
             print(new.get("content"))
             connection.sendmail(
                 from_addr=MY_EMAIL,
-                to_addrs="gchen.svago@gmail.com",
+                to_addrs="to@email.com",
                 msg=f"Subject:TSLA {delta}\n\n"
                     f"{title}"
                     f"{content}"
