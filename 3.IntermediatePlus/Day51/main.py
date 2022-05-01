@@ -1,0 +1,6 @@
+from InternetSpeedTwitterBot import InternetSpeedTwitterBot
+
+internet_speed_twitter_bot = InternetSpeedTwitterBot()
+
+internet_speed_twitter_bot.get_internet_speed()
+internet_speed_twitter_bot.tweet_at_provider()
