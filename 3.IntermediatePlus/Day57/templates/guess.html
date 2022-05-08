@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess {{ name.title() }}</title>
+</head>
+<body>
+    <h1>Hey {{ name.title() }}!</h1>
+    <h2>I think you are {{ gender }},</h2>
+    <h3>and maybe {{ age }} years old.</h3>
+    <a href="{{ url_for('get_blog') }}">Go to Blog</a>
+</body>
+<footer>
+    <p>© Copyright {{ year }}. By {{ author }}</p>
+</footer>
+</html>
